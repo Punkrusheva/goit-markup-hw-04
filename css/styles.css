@@ -459,6 +459,7 @@ a {
 
 /* CUSTOMERS */
 .customers {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .customers .container {
@@ -787,6 +788,7 @@ a {
 }
 
 .subscribe [type="text"] {
+  padding-left: 16px;
   margin-right: 12px;
   width: 358px;
   height: 50px;
@@ -826,6 +828,7 @@ a {
 }*/
 .footer .buttom {
   display: inline-flex;
+  align-items: center;
   padding: 10px 28px;
   justify-content: space-between;
   background-color: var(--accent-color);
