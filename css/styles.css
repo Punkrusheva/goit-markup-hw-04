@@ -260,9 +260,10 @@ a {
   margin: 0px;
   padding-left: 0px;
 }
-/*
+
 .advantages .list-item::before {
   display: block;
+  width: 100%;
   height: 120px;
   background-color: rgba(245, 244, 250, 0.5);
   background-size: contain;
@@ -270,22 +271,21 @@ a {
   background-position: center;
   content: "";
   border-radius: 4px;
+  background-size: 70px;
 }
-.list-item:nth-child(1)::before {
-  background-image: url("./images/svg/icon-1.svg");
-  content: "";
-  background-position: center;
-  background-size: contain;
+.advantages .list-item:nth-child(1)::before {
+  background-image: url("../images/svg/icon-1.svg");
 }
-.list-item:nth-child(2):: {
-  background-image: url("./images/svg/icon-2.svg");
+
+.advantages .list-item:nth-child(2)::before {
+  background-image: url("../images/svg/icon-2.svg");
 }
-.list-item:nth-child(3):: {
-  background-image: url("./images/svg/icon-3.svg");
+.advantages .list-item:nth-child(3)::before {
+  background-image: url("../images/svg/icon-3.svg");
 }
-.list-item:nth-child(4):: {
-  background-image: url("./images/svg/icon-4.svg");
-}*/
+.advantages .list-item:nth-child(4)::before {
+  background-image: url("../images/svg/icon-4.svg");
+}
 .advantages .list-item {
   margin-right: 30px;
   width: calc((100% - 30px * 3) / 4);
@@ -400,8 +400,8 @@ a {
   font-family: var(--font-family);
   color: var(--text-color);
 }
-.team a:hover,
-.team a:focus {
+.team .link:hover,
+.team .link:focus {
   background-color: var(--accent-color);
   color: var(--light-color);
 }
@@ -410,45 +410,53 @@ a {
   padding: 0px;
   margin: 0px;
 }
-.team .team-list {
+.team-list {
   width: calc((100% - 30px * 3) / 4);
   margin-right: 30px;
-  background: #ffffff;
+  background: var(--light-color);
   padding-bottom: 24px;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
-.team .team-list:last-child {
+.team-list:last-child {
   margin-right: 0px;
 }
-.soc-cont .link {
-  font-size: 16px;
-} /*
-.team .soc-cont {
-  content: "";
+.team-list ul {
+  margin-left: 32px;
+}
+.team-list .soc-cont {
+  margin-right: 10px;
   width: 44px;
   height: 44px;
-  margin-right: 10px;
-  background-repeat: no-repeat;
-  background-color: #fff;
+  background-color: var(--light-color);
+  content: "";
   background-position: center;
-  border-radius: 50%;
-  bottom: 2px solid red;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 100%;
+  background-size: auto;
 }
-
-.team .soc-cont:nth-child(1) {
+.team-list .soc-cont:last-child {
+  margin-right: 0px;
+}
+.team-list .soc-cont:hover,
+.team-list .soc-cont:focus {
+  background-color: var(--accent-color);
+}
+.team-list .soc-cont:nth-child(1) {
   background-image: url("../images/svg/icon-instagram.svg");
 }
-.team .soc-cont:nth-child(2) {
+.team-list .soc-cont:nth-child(2) {
   background-image: url("../images/svg/icon-twitter.svg");
 }
-.team .soc-cont:nth-child(3) {
+.team-list .soc-cont:nth-child(3) {
   background-image: url("../images/svg/icon-facebook.svg");
 }
-.team .soc-cont:nth-child(4) {
+.team-list .soc-cont:nth-child(4) {
   background-image: url("../images/svg/icon-linkedin.svg");
-}*/
+}
+
 /* CUSTOMERS */
 .customers {
   padding-bottom: 94px;
@@ -468,6 +476,42 @@ a {
 }
 .customers li:last-child {
   margin-right: 0px;
+}
+.customers .list-item::before {
+  content: "";
+  background-color: #ffffff;
+  display: block;
+  width: 100%;
+  height: 90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  background-size: 70px;
+}
+.customers .list-item:nth-child(1)::before {
+  background-image: url("../images/svg/logo-1.svg");
+  background-size: auto;
+}
+.customers .list-item:nth-child(2)::before {
+  background-image: url("../images/svg/logo-2.svg");
+  background-size: auto;
+}
+.customers .list-item:nth-child(3)::before {
+  background-image: url("../images/svg/logo-3.svg");
+  background-size: auto;
+}
+.customers .list-item:nth-child(4)::before {
+  background-image: url("../images/svg/logo-4.svg");
+  background-size: auto;
+}
+.customers .list-item:nth-child(5)::before {
+  background-image: url("../images/svg/logo-5.svg");
+  background-size: auto;
+}
+.customers .list-item:nth-child(6)::before {
+  background-image: url("../images/svg/logo-6.svg");
+  background-size: auto;
 }
 /* PORTFOLIO */
 
@@ -694,10 +738,36 @@ a {
 }
 .social li {
   margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  content: "";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 100%;
+  background-size: auto;
 }
 .social li:last-child {
   margin-right: 0px;
 }
+.social li:hover,
+.social li:focus {
+  background-color: var(--accent-color);
+}
+.social li:nth-child(1) {
+  background-image: url("../images/svg/icon-instagram.svg");
+}
+.social li:nth-child(2) {
+  background-image: url("../images/svg/icon-twitter.svg");
+}
+.social li:nth-child(3) {
+  background-image: url("../images/svg/icon-facebook.svg");
+}
+.social li:nth-child(4) {
+  background-image: url("../images/svg/icon-linkedin.svg");
+}
+
 /* SUBSCRIBE */
 .subscribe {
   display: flex;
@@ -755,10 +825,11 @@ a {
   color: var(--light-color);
 }*/
 .footer .buttom {
-  display: inline-block;
-  /*margin-top: 430px;*/
-  padding: 10px 32px;
+  display: inline-flex;
+  padding: 10px 28px;
+  justify-content: space-between;
   background-color: var(--accent-color);
+  color: var(--light-color);
   width: 196px;
   height: 50px;
   border-radius: 4px;
@@ -767,21 +838,19 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
-  /* identical to box height, or 187% */
   letter-spacing: 0.06em;
-  color: var(--light-color);
 }
-/*
-.form .buttom::after {
+
+.footer .buttom::after {
   height: 24px;
   width: 24px;
-  background-color: #fff;
+  background-color: var(--accent-color);
   background-image: url(../images/svg/icon-send.svg);
   content: "";
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-}*/
+}
 /*
 .subscribe [type="submit"]::after {
   display: block;
