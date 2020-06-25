@@ -188,9 +188,6 @@ a {
   fill: currentColor;
   margin-right: 10px;
 }
-.icon-address-header:last-child {
-  margin-right: 0px;
-}
 /*.address-header .e-mail::before {
   display: inline-block;
   width: 16px;
