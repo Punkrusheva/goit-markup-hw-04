@@ -129,7 +129,6 @@ a {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-
 .site-nav .link {
   color: var(--title-color);
   padding-bottom: 28px;
@@ -147,6 +146,7 @@ a {
 .site-nav li:last-child {
   margin-right: 0px;
 }
+
 /* ADDRESS HEADER */
 .address .address-header {
   display: flex;
@@ -165,6 +165,7 @@ a {
 .address-header .e-mail,
 .address-header .phone {
   display: flex;
+  justify-content: center;
   align-items: center;
   font-family: var(--font-family);
   list-style-type: none;
@@ -180,8 +181,6 @@ a {
   color: var(--accent-color);
 }
 .icon-address-header {
-  outline: 1px solid red;
-  display: inline-block;
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -416,17 +415,16 @@ a {
   justify-content: center;
 }
 .team-list .link {
-  outline: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 .team-list .soc-cont {
   margin-right: 10px;
   background-color: var(--light-color);
-  content: "";
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -440,9 +438,8 @@ a {
   background-color: var(--accent-color);
 }
 .team-soc {
-  outline: 1px solid red;
-  width: 20px;
-  height: 20px;
+  width: 1em;
+  height: 1em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
@@ -681,19 +678,12 @@ a {
   color: var(--light-color);
 }
 .social a {
-  outline: 1px solid red;
-  font-family: var(--font-family);
   color: var(--light-color);
+  line-height: 0.7;
 }
 .social a:hover,
 .social a:focus {
   background-color: var(--accent-color);
-  color: var(--light-color);
-}
-.social-list ul {
-  display: flex;
-  padding: 0px;
-  margin: 0px;
 }
 .social-list {
   display: flex;
@@ -706,7 +696,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid red;
   margin-right: 10px;
   width: 44px;
   height: 44px;
@@ -726,7 +715,6 @@ a {
   background-color: var(--accent-color);
 }
 .icon-soc {
-  outline: 1px solid red;
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -809,7 +797,6 @@ a {
   letter-spacing: 0.06em;
 }
 .icon-send {
-  outline: 1px solid red;
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
