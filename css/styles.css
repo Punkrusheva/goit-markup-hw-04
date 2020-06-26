@@ -436,6 +436,7 @@ a {
 .team .link:focus {
   background-color: var(--accent-color);
   color: var(--light-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .team ul {
   display: flex;
@@ -455,19 +456,24 @@ a {
   margin-right: 0px;
 }
 .team-list ul {
-  margin-left: 32px;
+  justify-content: center;
+}
+.team-list .link {
+  outline: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 }
 .team-list .soc-cont {
   margin-right: 10px;
-  width: 44px;
-  height: 44px;
   background-color: var(--light-color);
   content: "";
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 100%;
-  background-size: auto;
+  border-radius: 50%;
 }
 .team-list .soc-cont:last-child {
   margin-right: 0px;
@@ -476,10 +482,10 @@ a {
 .team-list .soc-cont:focus {
   background-color: var(--accent-color);
 }
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
+.team-soc {
+  outline: 1px solid red;
+  width: 20px;
+  height: 20px;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
@@ -776,9 +782,8 @@ a {
   color: var(--light-color);
 }
 .social a {
-  border-radius: 8px;
+  outline: 1px solid red;
   font-family: var(--font-family);
-  background-color: rgba(255, 255, 255, 0.1);
   color: var(--light-color);
 }
 .social a:hover,
@@ -786,12 +791,23 @@ a {
   background-color: var(--accent-color);
   color: var(--light-color);
 }
+.social-list ul {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
 .social-list {
   display: flex;
+  justify-self: center;
+  align-items: center;
   margin: 0px;
   padding: 0px;
 }
 .social li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid red;
   margin-right: 10px;
   width: 44px;
   height: 44px;
@@ -800,7 +816,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 100%;
+  border-radius: 50%;
   background-size: auto;
 }
 .social li:last-child {
@@ -811,10 +827,9 @@ a {
   background-color: var(--accent-color);
 }
 .icon-soc {
-  display: flex;
-  justify-self: center;
-  width: 2em;
-  height: 2em;
+  outline: 1px solid red;
+  width: 1em;
+  height: 1em;
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
